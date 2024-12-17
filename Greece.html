@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/Hobis/По учебе/Курсач/css/countries.css">
+    <link rel="stylesheet" href="C:/Users/Hobis/По учебе/Курсач/css/menu.css">
+    <link rel="stylesheet" href="../Курсач/css/footer.css">
+    <link rel="icon" href="../Курсач/picters/ico/звезда.png" type="image/jpeg">
+    <title>Греция</title>
+</head>
+<body>
+    <header class="top-panel">
+        <div class="header-icon">
+            <img src="../Курсач/picters/ico/greece1.png">
+        </div>
+        <div class="menu-container">
+            <a href="Вход.html" class="menu" role="button">Войти</a>
+            <a href="Регистрация.html" class="menu" role="button">Регистрация</a>
+            <a href="../Курсач/html/Profile.html" class="menu profile-link" title="Профиль">
+                <img src="../Курсач/picters/ico/pr.png" alt="Профиль" class="profile-icon">
+            </a>
+        </div>  
+        <div class="menu-icon" onclick="toggleSidebar()">
+            ☰
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <div class="text-main">Содержание страницы</div>
+        <ul>
+            <li><a href="#myths">Мифы</a></li>
+            <p>Прометей</p>
+            <p>Сизифе</p>
+            <p>Икаре</p>
+            <li><a href="#legends">Легенды</a></li>
+            <p>Ясон</p>
+            <p>Фаэтон</p>
+            <p>Орфей</p>
+        </ul>
+    </div>
+    <div class="myth-text" id="myths">Мифы</div>
+    <div class="container-myths">
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/myth/Prometheus.html'" style="cursor: pointer;">
+            <div class="card-image">
+            <img src="../Курсач/picters/greece/myth/prometheus.jpg" class="card-image">
+            <div class="card-overlay">
+                <div class="text-main">Прометей</div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/myth/Sisyphus.html'" style="cursor: pointer;">
+            <div class="card-image">
+              <img src="../Курсач/picters/greece/myth/sisyphus.png"class="card-image">
+              <div class="card-overlay">
+                <div class="text-main">Сизифе</div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/myth/Icare.html'" style="cursor: pointer;">
+            <div class="card-image">
+              <img src="../Курсач/picters/greece/myth/icare.jpg" class="card-image">
+              <div class="card-overlay">
+                <div class="text-main">Икаре</div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="legend-text" id="legends">Легенды</div>
+    <div class="container-legends">
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/legend/Jason.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="../Курсач/picters/greece/legend/jason.jpg" class="card-image">
+            <div class="card-overlay">
+                <div class="text-main">Ясон</div>
+            </div>
+          </div>
+        </div>
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/legend/Phaeton.html'" style="cursor: pointer;">
+            <div class="card-image">
+            <img src="../Курсач/picters/greece/legend/phaeton.jpg" class="card-image">
+            <div class="card-overlay">
+                <div class="text-main">Фаэтон</div>
+            </div>
+            </div>
+        </div>
+        <div class="myth-card" onclick="window.location.href='C:/Users/Hobis/По учебе/Курсач/html/greece/legend/Orpheus.html'" style="cursor: pointer;">
+            <div class="card-image">
+            <img src="../Курсач/picters/greece/legend/orpheus.jpg" class="card-image">
+            <div class="card-overlay">
+                <div class="text-main">Орфей</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Курсач/js/search.js"></script>
+    <script src="../Курсач/js/sidebar.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-columns">
+            <ul>
+                <li><a href="../Курсач/China.html">Китай</a></li>
+                <li><a href="../Курсач/Japan.html">Япония</a></li>
+                <li><a href="../Курсач/India.html">Индия</a></li>
+            </ul>
+            <ul>
+                <li><a href="../Курсач/Greece.html">Греция</a></li>
+                <li><a href="../Курсач/Egypt.html">Египет</a></li>
+                <li><a href="../Курсач/Spain.html">Испания</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-right">
+        <ul>
+            <li><a href="https://vk.com"><img src="../Курсач/picters/ico/vk.png" alt="ВКонтакте" class="icon"></a></li>
+            <li><a href="https://telegram.org"><img src="../Курсач/picters/ico/tg.png" alt="Telegram" class="icon"></a></li>
+            <li><a href="../Курсач/html/Contact.html"><img src="../Курсач/picters/ico/em.png"  alt="Email" class="icon"></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 МифЛег.
+    </div>   
+</footer>
