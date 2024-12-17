@@ -1,6 +1,6 @@
 // Обработчик клика на всей странице
 document.addEventListener("click", function(event) { // event добавлен сюда
-    window.location.href = "MythLeg/Путешествие.html";
+    window.location.href = "Путешествие.html";
 });
 
 
