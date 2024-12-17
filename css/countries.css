@@ -1,0 +1,295 @@
+body{
+    background-color: rgb(249, 249, 227);
+    margin: 0;
+}
+.header-icon { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    z-index: 100;
+    align-items: center; 
+}
+.header-icon img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}  
+.container-myths, .container-legends {
+    padding: 40px 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+.myth-card {
+    border: 1.5px solid #927f38e1;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f97e;
+    transition: transform 0.5s;
+}
+.myth-card legend{
+    border: 1.5px solid #927f38e1;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f97e;
+    transition: transform 0.5s;
+}
+.myth-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 15px rgba(99, 80, 44, 0.872);
+}
+.myth-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+.myth-text, .legend-text{
+    font-family: 'Times New Roman', serif;  
+    font-size: 40px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.text-main{
+    font-family: 'book', serif;  
+    font-size: 25px;
+    text-align: center; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+@font-face {
+    font-family: 'book';
+    src: url('../fonts/book5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+img 
+{
+  max-width: 100%;
+  height: auto;
+}
+.img-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.image-content {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.content-text
+{
+  font-family: 'Times New Roman', serif;
+  color: rgb(16, 16, 16);
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  text-align: justify;
+}
+.menu-icon {
+    margin: 20px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: #82773a;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding: 20px;
+    z-index: 99;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar ul li a {
+    margin-top: 30px;
+    padding-top: 20px;
+    font-family: 'book', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin: 15px 0;
+    transition: color 0.3s; 
+}
+.sidebar ul li a:hover {
+    color: #b6a858;
+    transition: color 0.3s;
+}
+.sidebar p{
+    font-family: 'book', serif;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-left: 40px;
+    font-size: 16px;
+    cursor: default;
+}
+.sidebar ul p:hover {
+    color: #b6a858;
+    transition: color 0.3s;
+}
+.menu-container {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+.button {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    display: inline-block;
+}
+.body-transition
+{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    animation: backgroundFade 6s ease forwards;
+}
+.body-transition .profile-link img {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.top-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgb(227, 227, 179, 1);
+    padding-top: 150px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    border: none;
+}
+@media (max-width: 768px) {
+    .header-icon img{
+        padding-right: 50px;
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+    } 
+    .menu-container {
+        right: 1px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 10px; 
+    }
+    .menu-icon {
+        margin: 50px 13px;
+        font-size: 14px;
+    }
+    .menu {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 30px 15px;
+        min-height: 10px;
+    }
+    .container-myths, .container-legends {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+      padding: 20px 40px;
+    }
+    .myth-card {
+        width: 80%;
+    }
+    .myth-text, .legend-text {
+        font-size: 30px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row; /* Размещаем блоки в ряд */
+        justify-content: space-between; /* Максимальное разделение блоков */
+        align-items: flex-start; /* Выравнивание по верхнему краю */
+        padding: 10px 20px;
+    }
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: left;
+    }
+    .footer-left {
+        flex: 1;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: flex-end;
+        /* width: 100%; */
+    }
+    .footer-left ul, .footer-right ul {
+        font-size: 12px;
+    }
+    .footer-right img {
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-myths, .container-legends {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .myth-card {
+        width: 300px;
+    }
+    .myth-text, .legend-text {
+        font-size: 35px;
+    }
+}
+@media (min-width: 1024px) {
+    .container-myths, .container-legends {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .myth-card {
+      width: 250px;
+    }
+}

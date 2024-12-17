@@ -1,0 +1,86 @@
+body.intro-page {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+} 
+.intro-text {
+  margin-top: 4em;
+  font-family: 'Times New Roman', serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  transition: color 2s ease;
+}
+.fill-on-hover {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(229, 196, 233);
+  transition: color 5s ease;
+  animation: fadeIn 5s ease forwards;
+}
+.fill-on-hover:hover {
+  color: rgb(241, 175, 243);
+  -webkit-text-stroke: 1px rgb(241, 175, 243);
+} 
+.close-button {
+  margin-top: 150px;
+  font-size: 16px; 
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInButton 1s ease forwards;
+  animation-delay: 1.5s;
+  transition: color 6s;
+}
+.close-button:hover {
+  color: rgb(241, 175, 243);
+}
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: transparent;
+    background-color: black;
+  }
+  to {
+    color: rgb(241, 175, 243);
+    background-color: transparent;
+    }
+}
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 2.3em;
+    margin-top: 2em;
+  }
+  .close-button {
+    font-size: 14px;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro-text {
+    font-size: 3em;
+  }
+  .close-button {
+    font-size: 20px];
+    margin-top: 120px;
+  }
+}

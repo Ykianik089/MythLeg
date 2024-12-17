@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .menu-container {
+        position: absolute;
+        top: 30px;
+        right: 1px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 5px; 
+    }
+    .menu-buttons {
+
+        display: flex;
+        gap: 5px;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .menu {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 30px 15px;
+        min-height: 40px;
+    }
+    .profile-link img {
+        width: 40px;
+        height: 40px;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+    .header-icon {
+        margin-left: -30px;
+    }
+    .container-countries   
+    {
+        padding: 150px 20px;
+        display: grid;  
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; 
+        justify-items: center;
+    }
+    .card-text
+    {
+        font-size: 26px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: left;
+    }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-left ul, .footer-right ul {
+        font-size: 12px;
+    }
+
+    .footer-right img {
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .menu-container {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 5px; 
+    }
+    .menu-icon {
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .header-icon img {
+        width: 50px;
+        height: auto;
+    }
+    .menu-buttons {
+        display: flex;
+        gap: 5px;
+    }
+    .menu-buttons .menu {
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        padding: 10px 15px;
+    }
+    .header-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile-link img {
+        width: 40px;
+        height: 40px;
+    }
+    .header-icon { 
+        margin-left: -20px;
+    }
+    .container-myths, .container-legends {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-countries {
+        padding: 100px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+    .card-text
+    {
+        font-size: 26px;
+    }
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 30px;
+    }
+
+    .footer-columns {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .footer-left, .footer-right {
+        min-width: 200px;
+    }
+}
+@media (min-width: 1024px) {
+    .menu {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .profile-link img {
+        width: 45px;
+        height: 45px;
+    }
+    .menu-container {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 5px; 
+    }  
+    .container-myths, .container-legends {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .myth-card {
+        width: 250px;
+    }
+    .header-icon { 
+        top: 35px;
+        left: 70px;
+        width: 100px;
+    }
+    .container-countries
+    {
+        padding-top: 150px;
+    }
+    .footer-right img {
+        margin-bottom: 10px;
+    }
+} 
