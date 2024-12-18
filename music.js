@@ -1,4 +1,4 @@
 // Обработчик клика на всей странице
 document.addEventListener("click", function() {
-    window.location.href = "Путешествие.html";
+    window.location.href = "Main.html";
 });
