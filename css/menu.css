@@ -68,13 +68,13 @@
   text-decoration: none;
 }
 .profile-link img {
-  padding-button: 20px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
 }
 
 .profile-link:hover img {
+  padding-buttom: 20px;
   transform: scale(1.1);
 }
 .profile-link:hover {
