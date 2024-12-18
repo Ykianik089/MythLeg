@@ -62,7 +62,6 @@
   justify-content: center;
   border: none;
   background: none;
-  padding-buttom: 10px;
   margin: 0;
   cursor: pointer;
   text-decoration: none;
@@ -74,7 +73,6 @@
 }
 
 .profile-link:hover img {
-  padding-buttom: 20px;
   transform: scale(1.1);
 }
 .profile-link:hover {
