@@ -100,10 +100,9 @@
     }
     .footer-right {
         justify-content: flex-start;
-        padding: 0;
+        padding-top: 20px;
     }
     .footer-right ul li {
-        padding-top: 20px;
         flex-direction: row-reverse;
     }
     .footer-bottom {
