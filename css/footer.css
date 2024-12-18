@@ -73,11 +73,14 @@
 @media (max-width: 420px) {
     .footer {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         padding: 10px 20px;
     }
     .footer-columns {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     .footer-left, .footer-right {
         width: 100%;
@@ -87,7 +90,7 @@
     .footer-left ul li, .footer-right ul li {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 10px;
     }
     .footer-left ul li a, .footer-right ul li a {
@@ -101,7 +104,6 @@
     }
     .footer-right ul li {
         flex-direction: row-reverse;
-        margin-left: 10px;
     }
     .footer-bottom {
         font-size: 12px;
