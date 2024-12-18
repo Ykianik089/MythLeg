@@ -237,11 +237,11 @@ img
     .myth-text, .legend-text {
         font-size: 30px;
     }
-    .footer {
+/*     .footer {
         display: flex;
-        flex-direction: row; /* Размещаем блоки в ряд */
-        justify-content: space-between; /* Максимальное разделение блоков */
-        align-items: flex-start; /* Выравнивание по верхнему краю */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
         padding: 10px 20px;
     }
     .footer-columns {
@@ -271,7 +271,7 @@ img
         font-size: 10px;
         margin-top: 10px;
         text-align: center;
-    }
+    } */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .container-myths, .container-legends {
