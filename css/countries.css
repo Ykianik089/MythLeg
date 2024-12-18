@@ -204,9 +204,9 @@ img
 }
 @media (max-width: 768px) {
     .header-icon img{
-        padding-right: 50px;
-        width: 65px;
-        height: 65px;
+        padding-right: 60px;
+        width: 60px;
+        height: 60px;
         object-fit: contain;
     } 
     .menu-container {
