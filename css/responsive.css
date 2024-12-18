@@ -28,7 +28,6 @@ html, body {
         cursor: pointer;
     }
     .menu {
-/*         font-weight: bold; */
         text-decoration: none;
         font-size: 18px;
         padding: 25px 1px;
@@ -94,7 +93,6 @@ html, body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .menu {
-/*         font-weight: bold; */
         font-size: 18px;
     }
     .menu-container {
@@ -121,7 +119,7 @@ html, body {
     .menu-buttons .menu {
         font-size: 18px;
         text-decoration: none;
-        font-weight: bold;
+/*         font-weight: bold; */
         color: #333;
         padding: 10px 15px;
     }
@@ -173,7 +171,6 @@ html, body {
 }
 @media (min-width: 1024px) {
     .menu {
-/*         font-weight: bold; */
         font-size: 24px;
     }
     .profile-link img {
