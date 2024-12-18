@@ -257,7 +257,6 @@ img
     .footer-right {
         display: flex;
         justify-content: flex-end;
-        /* width: 100%; */
     }
     .footer-left ul, .footer-right ul {
         font-size: 12px;
