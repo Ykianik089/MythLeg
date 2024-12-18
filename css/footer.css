@@ -70,3 +70,40 @@
     padding-top: 1px;
     font-family: 'book', Arial, sans-serif;
 }
+@media (max-width: 420px) {
+    .footer {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-left, .footer-right {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .footer-left ul li, .footer-right ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .footer-left ul li a, .footer-right ul li a {
+        flex-grow: 1;
+        font-size: 16px;
+        text-align: left;
+    }
+    .footer-right {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .footer-right ul li {
+        flex-direction: row-reverse;
+    }
+    .footer-bottom {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}
