@@ -81,8 +81,9 @@ body{
 }
 img 
 {
-  max-width: 100%;
-  height: auto;
+    padding-buttom: 20px;
+    max-width: 100%;
+    height: auto;
 }
 .img-slider-wrapper {
   position: relative;
