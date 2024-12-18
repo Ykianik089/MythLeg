@@ -56,7 +56,7 @@ html, body {
     {
         font-size: 26px;
     }
-    .footer {
+/*     .footer {
         display: flex;
         flex-direction: column; 
         align-items: flex-start;
@@ -89,7 +89,7 @@ html, body {
         font-size: 10px;
         margin-top: 10px;
         text-align: center;
-    }
+    } */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .menu {
