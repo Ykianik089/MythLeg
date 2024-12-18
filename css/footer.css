@@ -80,9 +80,9 @@
         gap: 10px;
     }
     .footer-left, .footer-right {
+        width: 100%;
         padding: 0;
         margin: 0;
-        width: 100%;
     }
     .footer-left ul li, .footer-right ul li {
         display: flex;
@@ -101,9 +101,11 @@
     }
     .footer-right ul li {
         flex-direction: row-reverse;
+        margin-left: 10px;
     }
     .footer-bottom {
         font-size: 12px;
         padding-top: 10px;
+        text-align: center;
     }
 }
